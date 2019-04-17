@@ -30,6 +30,6 @@ python aut_enc.py
 
 We now explore how well our autoencoder translates a data point of MNIST domain to a data point of SVHN domain.
 
-MNIST            |  SVHN
+MNIST (Input to encoder)            |  SVHN (output of decoder)
 :-------------------------:|:-------------------------: 
 ![](https://github.com/PrateekMunjal/Adversarial-Domain-Adaptive-Autoencoders/blob/master/op/orig-img-14-source.png)  |  ![](https://github.com/PrateekMunjal/Adversarial-Domain-Adaptive-Autoencoders/blob/master/op/recons-img-14-source.png)
