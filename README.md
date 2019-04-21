@@ -11,9 +11,9 @@ We use the autoencoder (i.e **deterministic** encoder and decoder) with an adver
 The encoder and decoder networks comprises of convolutional and transposed convolutional layers respectively. The adversary also copies the architecture of encoder with additionally a fully connected layer which depicts the probability of real/fake.
 
 ## Loss functions
-For encoder and decoder: The source (MNIST) data points we do not employ a l2 loss, it is only trained on adversarila loss which is to fool the discriminator. However, for the target (SVHN) data points we use a weighted sum of l2 loss and adversarial loss.
+For encoder and decoder: The source (MNIST) data points we do not employ a l2 loss, it is only trained on adversarila loss which is to fool the discriminator. However, for the target (colored-Mnist) data points we use a weighted sum of l2 loss and adversarial loss.
 
-For adversary: We treat the target data points as real and everything else as fake. Thus, the discriminator is actual player behind injecting the SVHN style in MNIST data points.
+For adversary: We treat the target data points as real and everything else as fake. Thus, the discriminator is actual player behind injecting the colored-Mnist style in MNIST data points.
 
 To get more details about our approach, please read [here](https://drive.google.com/file/d/1BaU8RhhzTdIuprW3K09FEC9yiEBXvmG3/view?usp=sharing).
 
@@ -27,9 +27,14 @@ python aut_enc.py
 ```
 
 ## Qualitative Result
+Data points
+MNIST            |  Colored-Mnist
+:-------------------------:|:-------------------------: 
+![](https://github.com/PrateekMunjal/Adversarial-Domain-Adaptive-Autoencoders/blob/master/op/orig-img-14-source.png)  |  ![](https://github.com/PrateekMunjal/Adversarial-Domain-Adaptive-Autoencoders/blob/master/op/orig-img-14-target.png)
 
-We now explore how well our autoencoder translates a data point of MNIST domain to a data point of SVHN domain.
 
-MNIST (Input to encoder)            |  SVHN (output of decoder)
+We now explore how well our autoencoder translates a data point of MNIST domain to a data point of colored-Mnist domain.
+
+MNIST (Input to encoder)            |  Colored-Mnist (output of decoder)
 :-------------------------:|:-------------------------: 
 ![](https://github.com/PrateekMunjal/Adversarial-Domain-Adaptive-Autoencoders/blob/master/op/orig-img-14-source.png)  |  ![](https://github.com/PrateekMunjal/Adversarial-Domain-Adaptive-Autoencoders/blob/master/op/recons-img-14-source.png)
