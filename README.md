@@ -27,11 +27,11 @@ python aut_enc.py
 ```
 
 ## Qualitative Result
-Data points
+Original Data points
+
 MNIST            |  Colored-Mnist
 :-------------------------:|:-------------------------: 
 ![](https://github.com/PrateekMunjal/Adversarial-Domain-Adaptive-Autoencoders/blob/master/op/orig-img-14-source.png)  |  ![](https://github.com/PrateekMunjal/Adversarial-Domain-Adaptive-Autoencoders/blob/master/op/orig-img-14-target.png)
-
 
 We now explore how well our autoencoder translates a data point of MNIST domain to a data point of colored-Mnist domain.
 
