@@ -15,7 +15,7 @@ For encoder and decoder: The source (MNIST) data points we do not employ a l2 lo
 
 For adversary: We treat the target data points as real and everything else as fake. Thus, the discriminator is actual player behind injecting the colored-Mnist style in MNIST data points.
 
-To get more details about our approach, please read [here](https://drive.google.com/file/d/1BaU8RhhzTdIuprW3K09FEC9yiEBXvmG3/view?usp=sharing).
+To get more details about our approach, please read [here](https://drive.google.com/file/d/1qGrku3Sjn9-umRmc2Dw5iJhY3qxBY394/view?usp=sharing).
 
 ## Usage
 To run the code we require three files: mnistm_data.pkl, model_weights(for inference) and labels.npy. -- All the required dependencies are available [here](https://drive.google.com/drive/folders/1jB66kz_ZKxBhk7TTFrY567D0ZxnlFP-9?usp=sharing). Ensure to keep all the above 
